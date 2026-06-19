@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HBO Max — Demo</title>
+  <meta name="description" content="Demo educativo: reconstrução da página HBO Max com HTML5, CSS3 e JS.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="HBO Max demo">
+        <svg class="logo" viewBox="0 0 200 40" aria-hidden="true" focusable="false">
+          <rect width="200" height="40" rx="6" fill="currentColor"></rect>
+          <text x="12" y="26" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#fff">HBO<span style="font-weight:700">Max</span></text>
+        </svg>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#plans" data-i18n="nav_plans">Plans</a></li>
+          <li><a href="#discover" data-i18n="nav_discover">Discover</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls" aria-hidden="false">
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <label for="lang" class="visually-hidden">Language</label>
+          <select id="lang" aria-label="Select language">
+            <option value="en">EN-US</option>
+            <option value="pt-BR">PT-BR</option>
+            <option value="es">ES</option>
+          </select>
+        </div>
+
+        <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle theme">
+          <span class="icon-moon" aria-hidden="true">🌙</span>
+          <span class="icon-sun" aria-hidden="true">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <h1 id="hero-title" data-i18n="hero_title">Enjoy the best stories for everyone</h1>
+        <p class="hero-sub" data-i18n="hero_sub">Subscribe from <strong>US$4.99 / month</strong></p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#plans" data-i18n="cta_subscribe">SUBSCRIBE NOW</a>
+          <a class="btn ghost" href="#discover" data-i18n="cta_discover">DISCOVER</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </section>
+
+    <section id="plans" class="plans" aria-labelledby="plans-title">
+      <div class="container">
+        <h2 id="plans-title" data-i18n="plans_title">Choose your plan</h2>
+        <p class="muted" data-i18n="plans_sub">Simple plans for every device</p>
+
+        <div class="plans-grid" role="list">
+          <article class="plan-card" role="listitem" tabindex="0" aria-labelledby="plan-mobile-title">
+            <header>
+              <h3 id="plan-mobile-title" data-i18n="plan_mobile">Mobile</h3>
+              <p class="price" aria-hidden="false"><span class="amount">US$4.99</span><span class="per">/month</span></p>
+            </header>
+            <ul class="features" aria-label="Mobile plan features">
+              <li data-i18n="mobile_f1">Watch on smartphones and tablets</li>
+              <li data-i18n="mobile_f2">1 screen at a time</li>
+              <li data-i18n="mobile_f3">Adaptive resolution</li>
+              <li data-i18n="mobile_f4">Download for offline</li>
+            </ul>
+            <div class="card-actions">
+              <button class="btn primary" data-i18n="choose_mobile">CHOOSE MOBILE</button>
+            </div>
+          </article>
+
+          <article class="plan-card featured" role="listitem" tabindex="0" aria-labelledby="plan-multi-title">
+            <header>
+              <h3 id="plan-multi-title" data-i18n="plan_multi">Multiscreen</h3>
+              <p class="price"><span class="amount">US$8.99</span><span class="per">/month</span></p>
+            </header>
+            <ul class="features" aria-label="Multiscreen plan features">
+              <li data-i18n="multi_f1">Watch on all your devices</li>
+              <li data-i18n="multi_f2">Up to 3 screens simultaneously</li>
+              <li data-i18n="multi_f3">HD and 4K available</li>
+              <li data-i18n="multi_f4">Create up to 5 profiles</li>
+            </ul>
+            <div class="card-actions">
+              <button class="btn primary" data-i18n="choose_multi">CHOOSE MULTISCREEN</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="discover" class="discover" aria-labelledby="discover-title">
+      <div class="container">
+        <h2 id="discover-title" data-i18n="discover_title">Discover new universes</h2>
+        <p class="muted" data-i18n="discover_sub">Explore categories and collections</p>
+
+        <div class="grid-categories" role="list">
+          <div class="category" role="listitem" tabindex="0" aria-label="HBO">
+            <div class="cat-visual hb"></div>
+            <h3 data-i18n="cat_hbo">HBO</h3>
+          </div>
+          <div class="category" role="listitem" tabindex="0" aria-label="Max Originals">
+            <div class="cat-visual mo"></div>
+            <h3 data-i18n="cat_max">Max Originals</h3>
+          </div>
+          <div class="category" role="listitem" tabindex="0" aria-label="DC">
+            <div class="cat-visual dc"></div>
+            <h3 data-i18n="cat_dc">DC</h3>
+          </div>
+          <div class="category" role="listitem" tabindex="0" aria-label="Warner Bros">
+            <div class="cat-visual wb"></div>
+            <h3 data-i18n="cat_wb">Warner Bros</h3>
+          </div>
+          <div class="category" role="listitem" tabindex="0" aria-label="Cartoon Network">
+            <div class="cat-visual cn"></div>
+            <h3 data-i18n="cat_cn">Cartoon Network</h3>
+          </div>
+          <div class="category" role="listitem" tabindex="0" aria-label="Champions League">
+            <div class="cat-visual cl"></div>
+            <h3 data-i18n="cat_cl">Champions League</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+        <details>
+          <summary data-i18n="faq_q1">What devices are supported?</summary>
+          <p data-i18n="faq_a1">Smartphones, tablets, smart TVs and web browsers.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq_q2">Can I cancel anytime?</summary>
+          <p data-i18n="faq_a2">Yes — cancel anytime from your account settings.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="muted" data-i18n="footer_copy">© 2026 HBO Max Demo — Educational project</p>
+      <nav aria-label="Footer links">
+        <ul>
+          <li><a href="#" data-i18n="footer_terms">Terms</a></li>
+          <li><a href="#" data-i18n="footer_privacy">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <div id="a11y-announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
