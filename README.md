@@ -29,6 +29,6 @@ Your moment has arrived! You will put into practice everything you learned durin
 - The project avoids external dependencies to facilitate local execution.
 - For production, add optimizations: compression, real images, and contrast tests.
 
-![Screenshot](/img/HBOmax.png)
+![Screenshot](./docs/public/HBOmax.png)
 
 [LICENSE](/LICENSE)
