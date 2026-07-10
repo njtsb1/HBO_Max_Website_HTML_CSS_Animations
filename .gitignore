@@ -1,0 +1,85 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+public/build/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vite/
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.production
+.env.test
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs and reports
+logs/
+*.log
+report.[0-9]*.json
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~ 
+*.bak
+
+# Generated assets
+*.map
+*.gz
+*.br
+
+# Package manager artifacts
+package-lock.json
+yarn.lock
+.pnp.*
+.pnpm-debug.log
+
+# Static site / tooling
+.sass-cache/
+.cache-loader/
+.cache/
+.cache/
+dist-*/
+
+# Misc
+coverage/
+nyc_output/
+jest-cache/
+.vagrant/
+*.local
+
+# MacOS Finder attributes
+.AppleDouble
+.LSOverride
+
+# Certificates and keys
+*.pem
+*.key
+
+# Ignore build artifacts from common bundlers
+rollup.cache
+.esbuild/
